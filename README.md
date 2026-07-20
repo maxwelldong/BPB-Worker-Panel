@@ -1,88 +1,73 @@
-<h1 align="center">BPB Panel 💦</h1>
+<h1 align="center">BPB Panel</h1>
 
 ### 🌏 Readme in [Farsi](README_fa.md)
 
 <p align="center">
-  <img src="docs/assets/images/Panel.jpg">
+  <img src="docs/assets/images/panel-overview.jpg" alt="Panel overview">
 </p>
 <br>
 
 ## Introduction
-This project is aimed to provide a user panel to access FREE and SECURE `VLESS`, `Trojan` and `Warp` configs and stay conntected even with a blocked domain or blocked Warp on ISPs, offering two deployment options: 
-- **Workers** deployment
-- **Pages** deployment
-<br>
+
+This project is aimed to provide a user panel to access FREE, SECURE, PRIVATE proxies and tools including **VLESS**, **Trojan** and **Warp** configs alongside a **private DoH** server for cross-platform clients. It ensures connectivity even when domains or Warp services are blocked by ISPs, offering **Workers** and **Pages** deployments using [BPB Wizard](https://github.com/bia-pain-bache/BPB-Wizard) in a few seconds!
 
 🌟 If you found **BPB Panel** valuable, Your donations make all the difference 🌟
-- **USDT (BEP20):** `0x111EFF917E7cf4b0BfC99Edffd8F1AbC2b23d158`
+
+### USDT (BEP20)
+
+```text
+0xbdf15d41C56f861f25b2b11C835bd45dfD5b792F
+```
 
 ## Features
 
-1. **Free**: No cost involved.
-2. **User-Friendly Panel:** Designed for easy navigation, configuration and usage.
-3. **Protocols:** Provides VLESS, Trojan and Wireguard (Warp) protocols.
-4. **Warp Pro configs:** Optimized Warp for crucial circumstances.
-5. **Support Fragment:** Supports Fragment functionality for crucial network situations.
-6. **Full routing rules:** Bypassing Iran/China/Russia and LAN, Blocking QUIC, Porn, Ads, Malwares, Phishing...
-7. **Chain Proxy:** Capable of adding a chain proxy to fix IP.
-8. **Supports Wide Range of Clients:** Offers subscription links for Xray, Sing-box and Clash core clients.
-9. **Password-Protected Panel:** Secure your panel with password protection.
-10. **Fully customizable:** Ability to use online scanner and setting up clean IP-domains, Proxy IP, setting DNS servers, choosing ports and protocols, Warp endpoints...
-<br>
+1. **Free and Private**: No costs involved and the server is private.
+2. **Intuitive Panel:** Streamlined for effortless navigation, configuration and use.
+3. **Versatile Protocols:** Provides VLESS, Trojan and Wireguard (Cloudflare Warp) protocols.
+4. **Private DoH:** A ready to use DoH server, capable of customizing underlying DNS server.
+5. **Warp Pro configs:** Optimized Warp for crucial circumstances.
+6. **Fragment support:** Supports Fragment functionality for crucial network situations.
+7. **Comprehensive Routing Rules:** Bypassing Iran/China/Russia, Blocking QUIC, Porn, Ads, Malwares, Phishing and also bypassing sanctions.
+8. **Chain Proxy:** Capable of adding a chain proxy (VLESS, Trojan, Shadowsocks, socks and http) to fix IP.
+9. **Broad client compatibility:** Offers subscription links for Xray, Sing-box and Clash-Mihomo core cross-platform clients.
+10. **Password-protected panel:** Provides secure and private panel with full authentication.
+11. **Fully customizable:** Supports setting up clean IPs-domains, Proxy IPs, DNS servers, choosing ports and protocols, Warp endpoints and more.
+12. **Node ability:** Can share settings and proxies across other BPB users.
+13. **Proxy aggregation:** Supports aggregating another proxies into BPB proxies and deliver in a single subscription.
 
 ## Limitations
 
-1. **UDP transport**: VLESS and Trojan protocols on workers cannot handle UDP properly, so UDP is blocked by default (some connections like Telegram video calls etc. will not work), also UDP DNS do not work on these protocols (so DOH is supported and set by default which is also safer).
-2. **Request limit**: each worker supports 100K requests per day for VLESS and Trojan, so it's sufficient for only 2-3 users. You can use custom personal domains for bypassing limitation on VLESS/Trojan or Warp configs which are limitless.
+1. **UDP transport**: VLESS and Trojan protocols on workers do not handle **UDP** properly, so it is disabled by default (affecting features like Telegram video calls), UDP DNS is also unsupported. DoH is enabled by default for enhanced security.
+2. **Request limit**: each worker supports 100K requests per day for VLESS and Trojan, suitable for 2-3 users. You can use limitless Warp configs.
 
-## How to use:
-- [Wizard installation - Workers and Pages](docs/wizard_installation_fa.md)
+## Getting started
 
-- [Manual installation - Pages](docs/pages_upload_installation_fa.md)
-
-- [Manual installation - Workers](docs/worker_installation_fa.md)
-
-- [How to use](docs/configuration_fa.md)
-
-- [FAQ](docs/faq.md)
-<br>
+- [Installation methods](https://bia-pain-bache.github.io/BPB-Worker-Panel/wizard/)
+- [Configuration](https://bia-pain-bache.github.io/BPB-Worker-Panel/configuration/)
+- [How to use](https://bia-pain-bache.github.io/BPB-Worker-Panel/usage/)
+- [FAQ](https://bia-pain-bache.github.io/BPB-Worker-Panel/faq/)
 
 ## Supported Clients
-| Client  | Version | Fragment | Warp Pro |
-| :-------------: | :-------------: | :-------------: | :-------------: |
-| **v2rayNG**  | 1.9.33 or higher  | :heavy_check_mark: | :heavy_check_mark: |
-| **v2rayN**  | 7.8.3 or higher  | :heavy_check_mark: | :heavy_check_mark: |
-| **v2rayN-PRO**  | 1.8 or higher  | :heavy_check_mark: | :heavy_check_mark: |
-| **Husi**  |   | :x: | :x: |
-| **Sing-box**  | 1.11.2 or higher  | :x: | :x: |
-| **Streisand**  | 1.6.48 or higher  | :heavy_check_mark: | :heavy_check_mark: |
-| **V2Box**  |   | :x: | :x: |
-| **Shadowrocket**  |   | :x: | :x: |
-| **Nekoray**  |   | :heavy_check_mark: | :x: |
-| **Hiddify**  | 2.5.7 or higher  | :heavy_check_mark: | :heavy_check_mark: |
-| **NikaNG**  |   | :heavy_check_mark: | :heavy_check_mark: |
-| **Clash Meta**  |   | :x: | :x: |
-| **Clash Verge Rev**  |   | :x: | :x: |
-| **FLClash**  |   | :x: | :x: |
 
-## Environment variables
-| Variable  | Usage |
-| :-------------: | :-------------: |
-| **UUID**  | VLESS UUID  |
-| **TR_PASS**  | Trojan Password  |
-| **PROXY_IP**  | Proxy IP or domain (VLESS, Trojan)  |
-| **SUB_PATH**  | Subscriptions' URI  |
-| **FALLBACK**  | Fallback domain (VLESS, Trojan) |
-| **DOH_URL**  | Core DOH |
-
----
-
-## Stargazers Over Time
-[![Stargazers Over Time](https://starchart.cc/bia-pain-bache/BPB-Worker-Panel.svg?variant=adaptive)](https://starchart.cc/bia-pain-bache/BPB-Worker-Panel)
+|       Client        | Minimum version |  Fragment support  |  Warp Pro support  |
+| :-----------------: | :-------------: | :----------------: | :----------------: |
+|     **v2rayNG**     |      2.2.3      | :heavy_check_mark: | :heavy_check_mark: |
+|     **MahsaNG**     |       16        | :heavy_check_mark: | :heavy_check_mark: |
+|     **v2rayN**      |     7.22.5      | :heavy_check_mark: | :heavy_check_mark: |
+|    **Streisand**    |     1.6.71      | :heavy_check_mark: | :heavy_check_mark: |
+|    **Sing-box**     |     1.12.0      | :heavy_check_mark: |        :x:         |
+|      **husi**       |      1.3.2      | :heavy_check_mark: |        :x:         |
+|   **Clash Meta**    |                 |        :x:         | :heavy_check_mark: |
+| **Clash Verge Rev** |                 |        :x:         | :heavy_check_mark: |
+|     **FLClash**     |                 |        :x:         | :heavy_check_mark: |
+|    **Wireguard**    |                 |        :x:         |        :x:         |
+|   **AmneziaVPN**    |                 |        :x:         | :heavy_check_mark: |
+|    **WG Tunnel**    |                 |        :x:         | :heavy_check_mark: |
 
 ---
 
 ### Special Thanks
-- VLESS, Trojan [Cloudflare-workers/pages proxy script](https://github.com/yonggekkk/Cloudflare-workers-pages-vless) created by [yonggekkk](https://github.com/yonggekkk)
+
+- VLESS, Trojan [Cloudflare-workers/pages proxy script](https://github.com/yonggekkk/Cloudflare-workers-pages-vless) by [yonggekkk](https://github.com/yonggekkk)
 - CF-vless code author [3Kmfi6HP](https://github.com/3Kmfi6HP/EDtunnel)
 - CF preferred IP program author [badafans](https://github.com/badafans/Cloudflare-IP-SpeedTest), [XIU2](https://github.com/XIU2/CloudflareSpeedTest)
